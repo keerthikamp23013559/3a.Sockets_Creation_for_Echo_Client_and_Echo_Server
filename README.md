@@ -11,9 +11,8 @@ Sockets Links.
  server .
 4. Send and receive the message using the send function in socket.
 ## PROGRAM
+## client
 ```
-client
-
 import socket 
 s=socket.socket() 
 s.connect(('localhost',8000)) 
@@ -22,6 +21,7 @@ while True:
     s.send(msg.encode()) 
     print("Server > ",s.recv(1024).decode())
 ```
+## server
 ```
 server
 
